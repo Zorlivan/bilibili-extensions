@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "隐藏哔哩哔哩弹幕按钮",
+  "version": "1.0",
+  "description": "一个隐藏哔哩哔哩视频页面弹幕开关按钮的插件。",
+  "author": "You",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.bilibili.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+"icons": {
+    "48": "icon.ico",
+    "128": "icon.ico"
+}
+}
